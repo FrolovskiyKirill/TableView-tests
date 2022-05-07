@@ -16,6 +16,7 @@
 		ED7495BF28251D0A00F58010 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7495BE28251D0A00F58010 /* EmojiTableViewController.swift */; };
 		ED7495C12825270300F58010 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7495C02825270300F58010 /* EmojiTableViewCell.swift */; };
 		ED7495C328252A8000F58010 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7495C228252A8000F58010 /* EmojiModel.swift */; };
+		EDBA58D12826F2D600A09A1B /* NewEmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA58D02826F2D600A09A1B /* NewEmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ED7495BE28251D0A00F58010 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 		ED7495C02825270300F58010 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
 		ED7495C228252A8000F58010 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
+		EDBA58D02826F2D600A09A1B /* NewEmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				ED7495AA282513DC00F58010 /* SceneDelegate.swift */,
 				ED7495AC282513DC00F58010 /* ViewController.swift */,
 				ED7495AE282513DC00F58010 /* Main.storyboard */,
+				EDBA58D02826F2D600A09A1B /* NewEmojiTableViewController.swift */,
 				ED7495C02825270300F58010 /* EmojiTableViewCell.swift */,
 				ED7495BE28251D0A00F58010 /* EmojiTableViewController.swift */,
 				ED7495C228252A8000F58010 /* EmojiModel.swift */,
@@ -151,6 +154,7 @@
 				ED7495AD282513DC00F58010 /* ViewController.swift in Sources */,
 				ED7495C328252A8000F58010 /* EmojiModel.swift in Sources */,
 				ED7495C12825270300F58010 /* EmojiTableViewCell.swift in Sources */,
+				EDBA58D12826F2D600A09A1B /* NewEmojiTableViewController.swift in Sources */,
 				ED7495A9282513DC00F58010 /* AppDelegate.swift in Sources */,
 				ED7495AB282513DC00F58010 /* SceneDelegate.swift in Sources */,
 			);

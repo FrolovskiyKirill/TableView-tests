@@ -71,7 +71,7 @@ class EmojiTableViewController: UITableViewController {
         return UISwipeActionsConfiguration(actions: [done, favorite])
     }
     
-    func doneAction(at indexPath: IndexPath) -> UIContextualAction {
+    private func doneAction(at indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .destructive, title: "Done") { (action, view, completion) in
             self.objects.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
@@ -82,7 +82,7 @@ class EmojiTableViewController: UITableViewController {
         return action
     }
     
-    func favoriteAction (at indexPath: IndexPath) -> UIContextualAction {
+    private func favoriteAction (at indexPath: IndexPath) -> UIContextualAction {
         var object = objects[indexPath.row]
         let action = UIContextualAction(style: .normal, title: "Favorite") { (action, view, completion) in
             object.isFavorite.toggle()
