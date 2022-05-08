@@ -9,12 +9,14 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
     
+    //MARK: Public Properties
     var objects = [
     EmojiModel(emoji: "🥰", name: "Love", description: "Let's love each other", isFavorite: false),
     EmojiModel(emoji: "⚽️", name: "Football", description: "Let's play football together", isFavorite: false),
     EmojiModel(emoji: "🐱", name: "Cat", description: "Cat is the cutest animal", isFavorite: false)
     ]
 
+    //MARK: Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +25,7 @@ class EmojiTableViewController: UITableViewController {
 
     }
     
+    //MARK: Navigation
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         guard segue.identifier == "saveSegue" else { return }
         let sourceVC = segue.source as! NewEmojiTableViewController
@@ -50,17 +53,14 @@ class EmojiTableViewController: UITableViewController {
         newEmojiVC.title = "Edit"
     }
 
-    // MARK: - Table view data source
-    
+    // MARK: - Table View Data Source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "emojiCell", for: indexPath) as! EmojiTableViewCell
@@ -99,6 +99,7 @@ class EmojiTableViewController: UITableViewController {
         return UISwipeActionsConfiguration(actions: [done, favorite])
     }
     
+    //MARK: Private Methods
     private func doneAction(at indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .destructive, title: "Done") { (action, view, completion) in
             self.objects.remove(at: indexPath.row)

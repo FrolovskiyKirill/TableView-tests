@@ -9,15 +9,17 @@ import UIKit
 
 class EmojiTableViewCell: UITableViewCell {
     
+    //MARK: IB Outlets
     @IBOutlet var emojiLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     
-
+    //MARK: Life Cycles Methods
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    //MARK: Public Methods
     func set(object: EmojiModel) {
         self.emojiLabel.text = object.emoji
         self.nameLabel.text = object.name
