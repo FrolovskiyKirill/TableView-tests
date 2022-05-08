@@ -107,7 +107,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="nameCnanged:" destination="3Um-1o-76p" eventType="editingChanged" id="Wjs-T5-Bkc"/>
+                                                        <action selector="nameChanged:" destination="3Um-1o-76p" eventType="editingChanged" id="046-Ea-eTd"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -130,7 +130,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1P-Pg-TxM">
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1P-Pg-TxM">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
