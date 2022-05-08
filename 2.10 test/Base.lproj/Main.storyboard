@@ -184,8 +184,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1Vc-Jf-v6u">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xtT-a6-iai"/>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="iVI-mk-Meq"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xtT-a6-iai">
+                            <connections>
+                                <segue destination="Ock-Yy-SbH" kind="unwind" unwindAction="unwindSegueWithSegue:" id="CVd-p0-f8b"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="iVI-mk-Meq">
+                            <connections>
+                                <segue destination="Ock-Yy-SbH" kind="unwind" identifier="saveSegue" unwindAction="unwindSegueWithSegue:" id="Czu-FL-dak"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="16J-iE-JkP" id="Z8m-an-cvT"/>
@@ -195,8 +203,9 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdc-iX-iWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ock-Yy-SbH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3337.68115942029" y="142.63392857142856"/>
+            <point key="canvasLocation" x="3343" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gl7-5H-E8Q">
@@ -213,7 +222,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="La9-qp-Kp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594" y="143"/>
+            <point key="canvasLocation" x="2599" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9H3-Fx-VqJ">
