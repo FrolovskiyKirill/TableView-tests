@@ -63,6 +63,7 @@
                                     <outlet property="descriptionLabel" destination="v18-dR-aPb" id="oew-CK-WRK"/>
                                     <outlet property="emojiLabel" destination="3ry-pl-xJa" id="tjR-Er-n7G"/>
                                     <outlet property="nameLabel" destination="Y5C-tH-gCv" id="mYD-p1-IHA"/>
+                                    <segue destination="LkU-Pu-dHD" kind="show" identifier="editEmoji" id="xnM-XG-gea"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -243,6 +244,9 @@
             <point key="canvasLocation" x="1104" y="137"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xnM-XG-gea"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
